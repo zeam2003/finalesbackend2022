@@ -1,6 +1,6 @@
-import ContainerMongo from "../../containers/ContainerMongo.js";
+import ContainerFB from "../../containers/ContainerFB.js";
 
-class DAOCarritosMongo extends ContainerMongo {
+class DAOCarritosFB extends ContainerFB {
     constructor() {
         super('carritos', {
             name: {type: String, required: true},
@@ -13,4 +13,4 @@ class DAOCarritosMongo extends ContainerMongo {
     }
 }
 
-export default DAOCarritosMongo;
+export default DAOCarritosFB;

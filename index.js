@@ -1,6 +1,11 @@
 import daos from "./daos/index.js";
 
-(async() => {
-    const {productoDAO, carritoDAO} = await daos();
-    await productoDAO.findAll({});
+(async () => {
+    const {productosDAO, carritosDAO} = await daos();
+    await productosDAO.save({
+        name: 'pepe',
+        cat: 'tortas',
+        desc: 'prueba',
+        img: 'dasfas'
+    });
 })();
